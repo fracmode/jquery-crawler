@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 付与するベンダープレフィックス */
+h1 {
+  color: red; }
+  h1:hover {
+    color: blue; }
