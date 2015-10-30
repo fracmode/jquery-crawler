@@ -51,6 +51,7 @@ do ->
 		console.log 'count', count, 'limit', params.limit
 		if count >= params.limit
 			console.log "crawling count is reached the limit. (#{ params.limit })"
+			callbackDone()
 			return
 		$el_next = $el_target.find(params.el.next)
 		if $el_next.length <= 0
@@ -71,8 +72,16 @@ do ->
 					return
 				error: ->
 					console.log 'error', _url
+					callbackDone()
 					return
 			return
+
+	# callbackDone()
+	callbackDone = () ->
+		$el_pre = $('<pre />')
+		for item in window.jQTB.result
+			$el_pre.append( $('<span />').text( item ) )
+		$('body').append( $el_pre )
 
 	window.jQTB.result = []
 
