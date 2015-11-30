@@ -1,0 +1,35 @@
+{
+  "name": "jquery-crawler",
+  "version": "1.0.0",
+  "description": "Web crawler mainly work on TorBrowser",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fracmode/jquery-crawler.git"
+  },
+  "keywords": [
+    "web",
+    "crawler",
+    "javascript",
+    "jquery",
+    "tor-browser"
+  ],
+  "author": "fracmode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fracmode/jquery-crawler/issues"
+  },
+  "homepage": "https://github.com/fracmode/jquery-crawler#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "coffeeify": "^1.2.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
